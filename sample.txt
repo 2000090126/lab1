@@ -1,11 +1,14 @@
-public class MultiplicationTable {
+#include <stdio.h>
+int main() {    
 
-    public static void main(String[] args) {
+    int number1, number2, sum;
+    
+    printf("Enter two integers: ");
+    scanf("%d %d", &number1, &number2);
 
-        int num = 5;
-        for(int i = 1; i <= 10; ++i)
-        {
-            System.out.printf("%d * %d = %d \n", num, i, num * i);
-        }
-    }
+    // calculating sum
+    sum = number1 + number2;      
+    
+    printf("%d + %d = %d", number1, number2, sum);
+    return 0;
 }
